@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application | rawkeys</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="sheet">
+        <div class="title-box">
+            <div class="title-top">Engineering</div>
+            <div class="title-main">Application for Employment</div>
+        </div>
+        <div class="req-note"><span class="req">*</span>Required</div>
+
+        <div class="notice">
+            Equal access to programs, services and employment opportunities is available to all persons without regard to race, color, religion, sex, national origin, age, disability, or any other basis protected by applicable law.
+        </div>
+
+        <div id="msg"><strong>Submitted:</strong> Your application and assesment have been recorded.</div>
+
+        <form id="form">
+            <div class="bar">Personal Information</div>
+            <div class="grid-3">
+                <div><label>First Name<span class="req">*</span></label><input type="text" placeholder="Brandon"required></div>
+                <div><label>Last Name<span class="req">*</span></label><input type="text" placeholder="Jackson" required></div>
+                <div><label>Middle Name</label><input type="text"></div>
+            </div>
+            <div class="grid-2">
+                <div><label>Email Address<span class="req">*</span></label><input type="email" placeholder="bjackson@example.com" required></div>
+                <div>
+                    <label>Position Applied For<span class="req">*</span></label>
+                    <select>
+                        <option>Full-Stack Developer</option>
+                        <option>Frontend Engineer</option>
+                        <option>Backend Engineer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bar">Programmer Assesment</div>
+            <div class="q">
+                <span class="q-title">1. Average time complexity of a hash table lookup?<span class="req">*</span></span>
+                <label class="radio"><input type="radio" name="q1" required>0(1) - Constant time</label>
+                <label class="radio"><input type="radio" name="q1">0(log n) - Logarithmic time</label>
+                <label class="radio"><input type="radio" name="q1">0(n) - Linear time</label>
+            </div>
+
+            <div class="q">
+                <span class="q-title">2. Write a function to reverse a string without built-in helpers:<span class="req">*</span></span>
+                <textarea rows="4">function reverseString(str)
+                </textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="brand">POWERED BY<b>rawkeys_dev</b></div>
+        <button type="submit">COMPLETE</button>
+    </div>
+
+    <script>
+        document.getElementById('form').onsubmit = e => {
+            e.preventDefault();
+            document.getElementById('msg').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

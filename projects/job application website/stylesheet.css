@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif
+}
+
+body {
+    background: #f4f5f7;
+    color: #333;
+    padding-bottom: 70px;
+    font-size: 13px;
+}
+
+.sheet {
+    max-width: 780px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 28px 32px 40px;
+}
+
+.title-top {
+    background: #7c9cc4;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+}
+
+.title-main {
+    background: #e9edf2;
+    color: #2c3e50;
+    font-size: 17px;
+    padding: 8px 10px;
+}
+
+.req-note {
+    text-align: right;
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.req {
+    color: #d93025;
+}
+
+.notice {
+    border: 1px solid #8c8c8c;
+    padding: 10px 12px;
+    font-size: 11px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.bar {
+    background: #7c9cc4;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 20px 0 14px;
+}
+
+.grid-3, .grid-2 {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+label {
+    display: block;
+    font-size: 11px;
+    color: #6e7781;
+    margin-bottom: 3px;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 2px;
+    font-size: 13px;
+    outline: none;
+    background: transparent;
+}
+
+input:focus, select:focus {
+    border-bottom: 2px solid #12468a;
+}
+
+.q {margin-bottom: 16px;}
+
+.q-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 6px;
+    display: block;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 12px;
+    outline: none;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #dcdcdc;
+    padding: 10px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size:  10px;
+    color: #777;
+}
+
+.brand b {
+    display: block;
+    color: #2a7ae2;
+    font-size: 13px;
+}
+
+button {
+    background: #12458a;
+    color: #fff;
+    border: none;
+    padding: 9px 22px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#msg {
+    display: none;
+    background: #eef6ee;
+    border: 1px solid #a3d3a3;
+    color: #1e4620;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+    .grid-3, .grid-2 {grid-template-columns: 1fr;}
+}
